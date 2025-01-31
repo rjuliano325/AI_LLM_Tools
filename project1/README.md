@@ -93,6 +93,7 @@ response += chunk.choices[0].delta.content or ''
 response = response.replace("",""").replace("markdown",""")
     update_display(Markdown(response), display_id=display_handle.display_id)
 \
+```
 
 The AI response is streamed in real-time and displayed interactively using Jupyter’s `Markdown` renderer.
 
